@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FATEA.PetNet.Web", "FATEA.PetNet.Web\FATEA.PetNet.Web.csproj", "{EE4E8BD1-C85A-4085-BB2A-DE8AB0111557}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FATEA.PetNet.Domain", "FATEA.PetNet.Domain\FATEA.PetNet.Domain.csproj", "{990A87F1-3C39-4026-8937-EB5A087D2F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FATEA.PetNet.DataAccess.Entity", "FATEA.PetNet.DataAccess.Entity\FATEA.PetNet.DataAccess.Entity.csproj", "{6521FA7E-287B-45D5-95F1-EA4C71173F2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FATEA.DataAcess.Entity.Common", "FATEA.DataAcess.Entity.Common\FATEA.DataAcess.Entity.Common.csproj", "{98B5C87D-724E-41EF-BBF0-5AFCB12AF0F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FATEA.Repository.Common", "FATEA.Repository.Common\FATEA.Repository.Common.csproj", "{E8DF01A6-0A6E-4682-8375-CAB458AD15D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FATEA.Repository.Common.Entity", "FATEA.Repository.Common.Entity\FATEA.Repository.Common.Entity.csproj", "{54FF2373-5938-4944-AC99-D75BB7BF869B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FATEA.PetNet.Repository", "FATEA.PetNet.Repository\FATEA.PetNet.Repository.csproj", "{AE3FB29B-A509-4C13-9DCA-A81C9255BCDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE4E8BD1-C85A-4085-BB2A-DE8AB0111557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4E8BD1-C85A-4085-BB2A-DE8AB0111557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4E8BD1-C85A-4085-BB2A-DE8AB0111557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4E8BD1-C85A-4085-BB2A-DE8AB0111557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{990A87F1-3C39-4026-8937-EB5A087D2F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990A87F1-3C39-4026-8937-EB5A087D2F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990A87F1-3C39-4026-8937-EB5A087D2F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990A87F1-3C39-4026-8937-EB5A087D2F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6521FA7E-287B-45D5-95F1-EA4C71173F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6521FA7E-287B-45D5-95F1-EA4C71173F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6521FA7E-287B-45D5-95F1-EA4C71173F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6521FA7E-287B-45D5-95F1-EA4C71173F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98B5C87D-724E-41EF-BBF0-5AFCB12AF0F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B5C87D-724E-41EF-BBF0-5AFCB12AF0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B5C87D-724E-41EF-BBF0-5AFCB12AF0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B5C87D-724E-41EF-BBF0-5AFCB12AF0F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8DF01A6-0A6E-4682-8375-CAB458AD15D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8DF01A6-0A6E-4682-8375-CAB458AD15D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8DF01A6-0A6E-4682-8375-CAB458AD15D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8DF01A6-0A6E-4682-8375-CAB458AD15D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54FF2373-5938-4944-AC99-D75BB7BF869B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FF2373-5938-4944-AC99-D75BB7BF869B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FF2373-5938-4944-AC99-D75BB7BF869B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FF2373-5938-4944-AC99-D75BB7BF869B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3FB29B-A509-4C13-9DCA-A81C9255BCDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3FB29B-A509-4C13-9DCA-A81C9255BCDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3FB29B-A509-4C13-9DCA-A81C9255BCDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3FB29B-A509-4C13-9DCA-A81C9255BCDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
