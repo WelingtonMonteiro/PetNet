@@ -1,0 +1,33 @@
+﻿@model FATEA.PetNet.Web.ViewModels.User.UserEditViewModel
+@{
+    ViewBag.Title = "Cadastro de Usuário";
+}
+
+<h2>Cadastro de Usuário</h2>
+@using (Html.BeginForm("CreateUser", "Account", FormMethod.Post))
+{
+
+    <div class="row">
+        @Html.AntiForgeryToken()
+        <div class="form-group col-md-8 col-xs-12">
+            <label class="label">Nome de usuário</label>
+            @Html.DisplayNameFor(p => p.UserName)
+            @Html.TextBoxFor(p => p.UserName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(p => p.UserName, "", new { @class = "text-danger" })
+            @Html.ValidationMessage("indentity_error", new { @class = "text-danger" })
+        </div>
+        <div class="form-group col-md-8">
+            @Html.DisplayNameFor(p => p.Password)
+            @Html.PasswordFor(p => p.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(p => p.Password, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group col-md-8">
+            @Html.DisplayNameFor(p => p.RoleId)
+            @Html.DropDownListFor(p => p.RoleId, (SelectList)ViewBag.Roles, new { @class="form-control"})
+            @Html.ValidationMessageFor(p => p.RoleId)
+        </div>
+    </div>
+        <input type="submit" class="btn btn-default" value="Salvar" />
+
+}
+

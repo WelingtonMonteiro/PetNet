@@ -15,9 +15,10 @@ using FATEA.Repository.Common;
 
 namespace FATEA.PetNet.Web.Controllers
 {
+    [Authorize]
     public class AnimalsController : Controller
     {
-        private ICrudRepository<Animal, long> _repository = new AnimalRepository(new PetNetDbContext());
+        private readonly ICrudRepository<Animal, long> _repository = new AnimalRepository(new PetNetDbContext());
 
         // GET: Animals
         public ActionResult Index()
@@ -46,6 +47,7 @@ namespace FATEA.PetNet.Web.Controllers
         }
 
         // GET: Animals/Create
+        [Authorize(Roles ="ADMINISTRATOR")]
         public ActionResult Create()
         {
             return View();
@@ -56,6 +58,8 @@ namespace FATEA.PetNet.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "ADMINISTRATOR")]
+
         public ActionResult Create(AnimalEditViewModel viewModel)
         {
             if (ModelState.IsValid)//faz validacao de todos os campos por reflection lendo as annotation
@@ -122,6 +126,7 @@ namespace FATEA.PetNet.Web.Controllers
 
         // POST: Animals/Delete/5
         [HttpPost, ActionName("Delete")]
+       
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(long id)
         {
